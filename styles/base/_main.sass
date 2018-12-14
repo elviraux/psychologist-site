@@ -1,0 +1,45 @@
+@charset "UTF-8"
+@import './_variables.sass'
+@import './_tabs.sass'
+@import './_common.sass'
+
+body
+  background: #ece7e7
+  background-image: url("../img/bgg.jpg");
+  height: 100%; 
+  background-position: center;
+  background-size: cover;
+
+  button
+    background-color: $rassbery!important
+    &:hover
+      background-color: $wine!important
+  .main-page
+    display: flex
+    flex-direction: column
+    padding: 5px 160px
+    // align-items: center
+
+    .title
+      // vertical-align: top
+      color: $rassbery
+      font-size: 14em;
+    .subtitle
+      // vertical-align: top
+      color: $charleston-green
+      font-size: 10em;
+    
+  .navigation
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 24px;
+
+    .navigation-item
+      margin-right: 84px;
+      font-size: 3em
+    a
+      text-decoration: none;
+      color: $wine;
+      &:hover
+        color: $rassbery
